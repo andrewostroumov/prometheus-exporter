@@ -27,4 +27,8 @@ class NvidiaGPUMetrics
   def temperature
     @params.dig("temperature", "gpu_temp").to_i
   end
+
+  def fan_speed
+    @params.dig("fan_speed").to_i
+  end
 end
