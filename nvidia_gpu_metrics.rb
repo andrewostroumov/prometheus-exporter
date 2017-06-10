@@ -15,7 +15,7 @@ class NvidiaGPUMetrics
   end
 
   def self.command
-    File.read("nvidia.xml")
+    `nvidia-smi -q -x`
   end
 
   attr_accessor :index
