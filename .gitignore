@@ -1,3 +1,4 @@
 .bundle
 .ruby-version
-tmp/pids/*.pid
+tmp/pids/*
+!tmp/pids/.keep
